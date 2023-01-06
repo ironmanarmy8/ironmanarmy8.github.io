@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .hdng:hover{
+        text-decoration: wavy underline #2f2ac9;
+    }
+    
+     .hdng{
+        margin-top: 30px!important;
+     }
+   
+
+    .para{
+        margin-top: 30px!important;
+        text-transform: uppercase;
+        text-decoration:line-through;
+    }
+    
+    marquee{
+        text-transform: uppercase;
+    }
+    .line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1000 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(202, 48, 48, 0.75);}
+  to{border-right-color: transparent;}
+}
+
+button:hover{
+    background-color:yellow;
+    color:#c92a2a;
+     border-radius: 30px;
+     box-shadow: 0 20px 30px #868e96;
+    
+}
+   
+
+</style>
+</head>
+<body style="background:rgb(0, 220, 254)">
+
+    <h2 style="text-align:center;color:red;" class="hdng line-1 anim-typewriter">ROYAL CHALLENGERS BANGALORE</h2>
+    <marquee style="background:yellow" class="mrq">REsults will be announced tomorrow...</marquee>
+
+    <p style="text-align:center;" class="para line-1 anim-typewriter">E SALA CUP NAMDE!</p>
+
+
+
+    <button style="padding:20px; float:left; margin-top:150px;"
+        onclick="document.getElementById('myImage').src='poor.jpg'">BEFORE ATTENDING RPL WORKSHOP</button>
+
+    <img id="myImage" src="poor.jpg" style="width:500px; padding-left:100px;">
+
+    <button style="padding:20px; float:right; margin-top:150px;"
+        onclick="document.getElementById('myImage').src='rich.jpg'">AFTER ATTENDING RPL WORKSHOP</button>
+
+</body>
+
+</html>
